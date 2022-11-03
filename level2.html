@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DungeonJS - level 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script/level2.js"></script>
+</head>
+
+<body>
+
+    <div class="corps">
+
+        <h1>DungeonJS - Level 2</h1>
+
+        <p id="haut">
+            You are in a 2x2 dungeon room.<br>
+            You are at the top left of the room (<span class="orange">ORANGE</span>),
+            the room is so dark that you cannot see the next squares.
+            You can only move on <span class="vert">GREEN</span> squares.<br>
+            In the room, you can find only a <span class="jaune">STAIRCASE</span>
+            which is maybe a path to an exit.<br>
+            <br>
+            You discover a new concept in this tower... LIFE and that you have now LIFE POINTS.<br>
+            Going down the stairs, you gained 5 Life and you have now a total of ... 5 L.P.
+        </p>
+
+        <div class="grille">
+            <div>
+                <button id="b0" class="bout2 orange"></button>
+                <button id="b1" class="bout2 vert"></button>
+            </div>
+            <div>
+                <button id="b2" class="bout2 vert"></button>
+                <button id="b3" class="bout2"></button>
+            </div>
+        </div>
+
+        <div class="texte">
+            <h2></h2>
+            <p id="remplir"></p>
+        </div>
+
+        <span id="sp0"></span><span id="sp1"></span><br>
+        <span id="sp2"></span><span id="sp3"></span><br>
+    </div>
+
+</body>
+
+</html>

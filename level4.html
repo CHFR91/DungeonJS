@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DungeonJS - level 4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script/level4.js"></script>
+</head>
+
+<body>
+
+    <div class="corps">
+
+        <h1>DungeonJS - Level 4</h1>
+
+        <p id="haut">
+            You are at the top left in a black 4x4 dungeon room (<span class="orange">ORANGE</span>)
+            and you can only move on <span class="vert">GREEN</span> squares.<br>
+            In the room, you can find a <span class="jaune">STAIRCASE</span> (maybe a path to an exit),
+            three <span class="rouge">MONSTERS</span> (each of them takes 10 Life Points from you) and a
+            <span class="bleu eblanc">TREASURE</span>.<br>
+            <br>
+            You get 5 more Life Points and you start this level with 15 points.<br>
+            <br>
+            ATTENTION, on the stairs, you find a red POTION (you read on the label +30) that you put immediately in your pocket and a short sword (to defend yourself, of course) that you keep in your hand.
+        </p>
+
+        <div class="grille">
+            <div>
+                <button id="b0" class="bout4 orange"></button>
+                <button id="b1" class="bout4 vert"></button>
+                <button id="b2" class="bout4"></button>
+                <button id="b3" class="bout4"></button>
+            </div>
+            <div>
+                <button id="b4" class="bout4 vert"></button>
+                <button id="b5" class="bout4"></button>
+                <button id="b6" class="bout4"></button>
+                <button id="b7" class="bout4"></button>
+            </div>
+            <div>
+                <button id="b8" class="bout4"></button>
+                <button id="b9" class="bout4"></button>
+                <button id="b10" class="bout4"></button>
+                <button id="b11" class="bout4"></button>
+            </div>
+            <div>
+                <button id="b12" class="bout4"></button>
+                <button id="b13" class="bout4"></button>
+                <button id="b14" class="bout4"></button>
+                <button id="b15" class="bout4"></button>
+            </div>
+            <div>
+                <button id="lapoche">YOUR POCKET</button>
+                <button id="lavie">LIFE POINTS</button>
+            </div>
+        </div>
+
+        <div class="texte">
+            <h2></h2>
+            <p id="remplir"></p>
+        </div>
+
+        <span id="sp0"></span><span id="sp1"></span><span id="sp2"></span><span id="sp3"></span><br>
+        <span id="sp4"></span><span id="sp5"></span><span id="sp6"></span><span id="sp7"></span><br>
+        <span id="sp8"></span><span id="sp9"></span><span id="sp10"></span><span id="sp11"></span><br>
+        <span id="sp12"></span><span id="sp13"></span><span id="sp14"></span><span id="sp15"></span><br>
+    </div>
+
+</body>
+
+</html>
